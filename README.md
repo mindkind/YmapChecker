@@ -1,10 +1,31 @@
-# YmapChecker - Compilation and Installation Guide
+# YmapChecker - Analysis and Compilation Guide
 
-## Prerequisites
-- Install **.NET Framework** (if not already installed).
-- Ensure **Visual Studio** or **.NET SDK** is installed.
+## Overview
+YmapChecker is a command-line tool designed to analyze `.ymap` files, commonly used in **FiveM** and **GTA V** map modifications. It checks whether the `.ymap` file is encrypted and extracts object coordinates to help developers debug and validate their custom maps.
+
+### Features
+- Detects whether a `.ymap` file is encrypted.
+- Extracts object coordinates from the `.ymap` file.
+- Useful for **FiveM** and **GTA V** modders.
+- Cross-platform support (Windows, Linux, macOS).
+
+## How to Use YmapChecker
+### Running the Tool
+To analyze a `.ymap` file, use the following command:
+```sh
+./YmapChecker my_map.ymap
+```
+Example output:
+```
+YMAP is not encrypted. Analyzing coordinates...
+Object: X=-1386.4225, Y=-614.3209, Z=33.52186
+```
+This output shows that the `.ymap` file is readable and provides the coordinates of objects within the map.
 
 ## Compilation and Installation
+### Prerequisites
+- Install **.NET Framework** (if not already installed).
+- Ensure **Visual Studio** or **.NET SDK** is installed.
 
 ### Using Visual Studio
 1. Open `YmapChecker.sln` in **Visual Studio**.
